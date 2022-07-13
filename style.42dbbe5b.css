@@ -1,0 +1,337 @@
+@font-face {
+  font-family: "Whitney_Light";
+  src: url(/Whitney-Light-Pro.3e504c53.otf) format("opentype");
+}
+@font-face {
+  font-family: "Whitney_Medium";
+  src: url(/Whitney-Medium-Pro.fb425a5e.otf) format("opentype");
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+main {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  width: 100%;
+  min-height: 80px;
+  background-color: #37384C;
+  position: fixed;
+  z-index: 2;
+}
+
+.header__container img {
+  width: 75px;
+  height: 30px;
+  margin-top: 1rem;
+}
+
+.hero {
+  background-color: #37384C;
+  background-image: url(/hero_background.6bcfa2ad.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 660px;
+  display: flex;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero_animation {
+  background: url(/hero-illustration.47e50673.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45px;
+  min-width: 1518px;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  animation: slideIn 4s ease-in;
+  animation-iteration-count: infinite;
+  display: flex;
+  margin-top: -50px;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4rem;
+}
+.hero_content h2 {
+  font-family: "Whitney_Light", sans-serif;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
+.hero_content p {
+  font-family: "Whitney_Light", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+.hero_button {
+  height: 44px;
+  background: #4A91F2;
+  box-shadow: 0px 1px 2px rgba(55, 56, 76, 0.16), 0px 4px 8px rgba(55, 56, 76, 0.08), 0px 8px 16px rgba(55, 56, 76, 0.04);
+  border-radius: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  font-family: "Whitney_Medium", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 11px;
+  cursor: pointer;
+}
+.hero_button:hover {
+  background: #FFFFFF;
+  color: #4A91F2;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.partners {
+  background-color: #F9FBFD;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  width: 84%;
+  min-height: 320px;
+  position: relative;
+  z-index: 1;
+  top: -35px;
+  display: flex;
+  right: -110px;
+}
+
+.partners__container {
+  display: flex;
+  flex-direction: column;
+}
+.partners__container h4 {
+  font-family: "Whitney_Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #12263F;
+  opacity: 0.64;
+  padding: 50px 0 10px 0;
+}
+.partners__container h4:hover {
+  opacity: 1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.partners_list {
+  display: flex;
+}
+.partners_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  gap: 2.5rem;
+  padding: 55px 0 55px 0;
+}
+
+.logo_item img {
+  max-height: 55px;
+  opacity: 0.8;
+}
+.logo_item img:hover {
+  opacity: 1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.products {
+  background-color: #F5F5F5;
+  z-index: 0;
+  min-height: 360px;
+}
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.products__container h3 {
+  font-family: "Whitney_Medium", sans-serif;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #E0820B;
+}
+.products__container p {
+  font-family: "Whitney_Light", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #37384C;
+}
+
+.footer {
+  background-color: #37384C;
+  min-height: 80px;
+}
+
+@media screen and (max-width: 968px) {
+  .hero_animation {
+    display: none;
+  }
+  .hero_content h2 {
+    font-size: 40px;
+  }
+  .hero_content p {
+    font-size: 22px;
+  }
+  .partners {
+    right: -70px;
+  }
+  .partners_list ul {
+    gap: 2rem;
+  }
+  .logo_item img {
+    max-height: 50px;
+  }
+  .partners__container h4 {
+    font-size: 20px;
+  }
+  .products__container h3 {
+    font-size: 42px;
+  }
+  .products__container p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .hero_animation {
+    display: none;
+  }
+  .hero_content h2 {
+    font-size: 36px;
+  }
+  .hero_content p {
+    font-size: 20px;
+  }
+  .hero_button {
+    width: 60%;
+  }
+  .partners {
+    top: 0px;
+    width: 100%;
+    border-radius: 0px;
+    left: -1px;
+  }
+  .logo_item img {
+    max-height: 36px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .products__container h3 {
+    font-size: 38px;
+  }
+  .products__container p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .hero_animation {
+    display: none;
+  }
+  .hero_content h2 {
+    font-size: 26px;
+  }
+  .hero_content p {
+    font-size: 16px;
+  }
+  .hero_button {
+    width: 60%;
+    font-size: 14px;
+  }
+  .partners {
+    top: 0px;
+    width: 100%;
+    border-radius: 0px;
+    left: -1px;
+  }
+  .partners_list {
+    margin-left: 30vw;
+  }
+  .logo_item {
+    width: 100vh;
+  }
+  .logo_item img {
+    max-height: 28px;
+  }
+  .partners__container {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .partners__container h4 {
+    font-size: 16px;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: 8px;
+  }
+  .products__container h3 {
+    font-size: 34px;
+  }
+  .products__container p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=/style.42dbbe5b.css.map */
