@@ -165,7 +165,8 @@ main {
   cursor: pointer;
   background: #4a91f2;
   border-radius: 10px;
-  padding: 11px;
+  justify-content: center;
+  padding: 13px;
   font-family: Whitney_Medium, sans-serif;
   font-size: 16px;
   font-style: normal;
