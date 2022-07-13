@@ -4,8 +4,10 @@
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
   },
+
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "gh-pages": "^4.0.0",
