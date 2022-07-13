@@ -1,7 +1,6 @@
 Link to Figma: https://www.figma.com/file/n1gahZxvFt0dCJKjnRW5HO/junior-web-developer-task?node-id=0%3A1 
 
-npm run start
-npm rum build
+npm run start, npm rum build
 
 Web Stack: HTML, SCSS
 
