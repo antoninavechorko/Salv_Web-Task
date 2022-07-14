@@ -1,1 +1,0 @@
-{"mappings":"AAEAA,QAAQC,IAAI","sources":["src/JS/index.js"],"sourcesContent":["import \"../Style/style.scss\";\r\n\r\nconsole.log('Hello world!');"],"names":["console","log"],"version":3,"file":"index.5a34fffc.js.map"}
